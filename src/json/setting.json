@@ -1,0 +1,23 @@
+{
+    "MoveImg": {
+        "Width": 30,
+        "Height": 30
+    },
+    "MainWindow": {
+        "Width": 250,
+        "Height": 350
+    },
+    "List": {
+        "MainWindow": "main-window",
+        "SettingWindow": "setting-window",
+        "MusicWindow": "music-window"
+    },
+    "IpcEvent": {
+        "Close": "close",
+        "Append": "append",
+        "Hidden": "hidden",
+        "MusicStart": "music-start",
+        "MusicData": "music-data",
+        "MusicDataGot": "music-data-got"
+    }
+}

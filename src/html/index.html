@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <base href="./">
+    <script src="../js/three.js"></script>
+    <!--     GLTF Loader for Three.js -->
+    <script src="../js/GLTFLoader.js"></script>
+    <!--     Orbit Controls for Three.js -->
+    <script src="../js/OrbitControls.js"></script>
+    <!--     VRM Loader for Three.js -->
+    <script src="../js/three-vrm.js"></script>
+    <!--     Mediapipe or Tensorflow.js -->
+    <script src="../js/holistic.js"
+      crossorigin="anonymous"></script>
+  
+    <!--     Mediapipe Drawing Tools -->
+    <script src="../js/drawing_utils.js" crossorigin="anonymous"></script>
+    <!--     Mediapipe Camera Tools -->
+    <script src="../js/camera_utils.js" crossorigin="anonymous"></script>
+    <!--     Kalidokit Kinematic Solver -->
+    <script src="../js/kalidokit.umd.js"></script>
+</head>
+
+<body>
+    
+    <div id="move" class="main"></div>
+
+    <div id="tools" class="main ctrl"></div>
+    
+    <div id="setting" class="main ctrl"></div>
+
+    <div id="box"></div>
+   
+    <div id="container">
+        <video class="input_video" width="1280px" height="720px" autoplay muted playsinline style="display: none !important"></video>
+        <canvas class="guides" style="height: 100%; width: 100%;"></canvas>
+    </div>
+</body>
+<script src="../js/renderer.js"></script>
+
+</html>

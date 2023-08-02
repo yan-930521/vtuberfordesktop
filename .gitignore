@@ -1,0 +1,4 @@
+/vtuberfordesktop-win32-x64/*
+/node_modules/*
+/dist/*
+/src/models/*

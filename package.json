@@ -1,0 +1,34 @@
+{
+    "name": "vtuberfordesktop",
+    "version": "1.0.0",
+    "description": "vtuber for desktop",
+    "main": "index.js",
+    "scripts": {
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "pack": "electron-builder -p never --win --dir",
+        "dist": "electron-builder -p never --win",
+        "build": "electron-packager . vtuberfordesktop --platform=win32 --arch=x64 --electron-version=22.2.0 --overwrite"
+    },
+    "author": "sakura",
+    "license": "ISC",
+    "build": {
+        "appId": "com.cilent.app.vtuberfordesktop",
+        "productName": "vtuberfordesktop",
+        "copyright": "Copyright © 2023 Sakura",
+        "directories": {
+            "output": "build"
+        },
+        "win": {
+            "icon": "./src/img/sakura.jpg"
+        }
+    },
+    "devDependencies": {
+        "electron": "^22.2.0",
+        "electron-builder": "^23.6.0",
+        "electron-packager": "^17.1.1"
+    },
+    "dependencies": {
+        "electron": "^22.2.0"
+    }
+}
